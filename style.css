@@ -2,14 +2,18 @@
     align-items: center;
     vertical-align: middle;
     font-weight: bold;
-    color: #c7ddd6;
+    color: #b6e4d5;
     font-size: 80px;
     text-shadow: 5px 5px 5px #eb3f7f10;
 }
 
-#box1 {
+#welcome {
+    font-size: 40px;
+    color: #e4d0b6;
+}
+
+#box1, #box2, #box3{
     background-color: #2a2331;
-    color: #ed3f7f;
     margin: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -21,36 +25,19 @@
     transition: transform .2s;
 }
 
+#box1{
+    color: #ed3f7f;
+}
 #box2 {
-    background-color: #2a2331;
     color: #9985d1;
-    margin: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px #eb3f7f10;
-    width: 25%;
-    max-width: 300px;
-    font-size: 32px;
-    transition: transform .2s;
 }
 
 #box3 {
-    background-color: #2a2331;
     color: #e0c4a4;
-    margin: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-radius: 8px;
-    width: 25%;
-    box-shadow: 2px 2px 2px 2px #eb3f7f10;
-    max-width: 300px;
-    font-size: 32px;
-    transition: transform .2s;
 }
 
 body {
-    background-color: #1a1820;
+    background-color: #191722;
     margin: 0;
     align-items: center;
     vertical-align: middle;
@@ -84,17 +71,10 @@ a {
     color: #c0935f;
 }
 
-#box1:hover {
+#box1:hover, #box2:hover, #box3:hover {
     transform: scale(1.1);
 }
 
-#box2:hover {
-    transform: scale(1.1);
-}
-
-#box3:hover {
-    transform: scale(1.1);
-}
 
 #searchbar:hover {
     width: 70%;
@@ -104,6 +84,7 @@ a {
 #searchbar:focus {
     width: 70%;
     max-width: 925px;
+    border: 5px solid #2a2331;
 }
 
 #searchbar {
