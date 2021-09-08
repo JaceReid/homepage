@@ -8,11 +8,17 @@ function formatAMPM(date) {
     var strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
 }
-
-console.log(formatAMPM(new Date));
-
-setInterval(function () {
+function setDate(){
+    
     var date = formatAMPM(new Date);
     document.getElementById("clock").innerHTML = date.toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })/* adding time to the div */
-    console.log("Done!");
+    
+}
+
+console.log(formatAMPM(new Date));
+setDate();
+
+
+setInterval(function () {
+    setDate();
 }, 1 * 1000);
